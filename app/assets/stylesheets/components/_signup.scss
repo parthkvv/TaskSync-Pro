@@ -1,0 +1,76 @@
+//mobile first approach
+
+
+.signup-container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+
+    &__header {
+        font-size: 2rem;
+    }
+
+    &__helper-text {
+        font-size: 1.2rem;
+        color: $text-gray;
+    }
+
+    &__img {
+        
+        width: 200px;
+        height: 200px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    &__footer {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    &__subcontent {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 30vh;
+    }
+}
+
+
+
+
+.photo-upload-wrap {
+    margin-top: 30px;
+    margin-bottom: -10px;
+}
+
+.profile-photo-container {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 0.8px solid $light-gray;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
+}
+
+.profile-photo-preview {
+    object-fit: cover;
+}
+
+
+//============ media queries=================//
+@media screen and (min-width: 768px) {
+
+
+}
+  
+@media screen and (min-width: 1120px) {
+
+}

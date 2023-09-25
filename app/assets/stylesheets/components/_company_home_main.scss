@@ -1,0 +1,144 @@
+.home-main-section { // refactor as below
+    padding: 128px 0 96px 0
+}; 
+
+// refactored
+// mobile first appraoch
+.home-container {
+    position: relative;
+    margin-top: 56px;
+
+    &__section {
+        padding: 128px 0 96px 0;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        text-align: center;
+
+
+        &__header {
+            font-size: calc(33.75px + (11.25 * ((100vw - 480px) / 800)));
+            line-height: 1.244;
+            margin-bottom: 32px;
+        }
+
+        &__subheader {
+
+        }
+
+        &__blob-text {
+            color: $text-gray;
+            font-size: 1.2rem;
+            margin-bottom: 32px;
+        }
+
+    }
+
+}
+
+.home-visuals {
+    width: 100vw;
+}
+
+.carousel {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    // background-color: $lightest-gray;
+    // padding: 5vh 0;
+
+    &__block {
+        width: 95%;
+        margin-top: 5vh;
+        text-align: center;
+        &__header {
+            font-size: 1.5rem;
+            color: $dark-navy;
+            margin-top: 5vh;
+            
+        }
+        &__text {
+            font-size: 1.2rem;
+            color: $text-gray;
+            margin-top: 5px;
+        }
+    }
+}
+.carousel-content-wrap {
+    width: 90%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 150px;
+}
+
+.carousel-content {
+    box-sizing: border-box;
+    padding: 0 50px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.main-video {
+    width: 95%;
+    margin-top: -200px;
+}
+.video-buff {
+    position: relative;
+    margin: 5vh auto 0 auto;
+    width: 90vw;
+    padding: 10vw 10vw 2vw 10vw;
+    background-image: url('https://luna1.co/c9414e.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    box-sizing: border-box;
+    &__left-image {
+        position: absolute;
+        width: 16%;
+        bottom: 100px;
+        left: 30px;
+        
+    }
+    &__right-image {
+        position: absolute;
+        width: 16%;
+        bottom: 100px;
+        right: 30px;
+        
+    }
+}
+
+
+
+
+//============ media queries=================//
+@media screen and (min-width: 768px) {
+    .home-container__section {
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+
+    .carousel {
+    
+        &__block {
+            width: 90%;
+        }
+    }
+
+}
+  
+@media screen and (min-width: 1120px) {
+    .home-container__section {
+        margin-left: 16.67%;
+        margin-right: 16.67%;
+    }    
+
+}

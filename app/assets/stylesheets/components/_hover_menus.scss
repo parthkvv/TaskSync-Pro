@@ -1,0 +1,127 @@
+//todo: remove the -btn classes and use the generic .dropdown-parent-btn
+.project-item-squre_mininav-btn {
+    position: relative;
+}
+.project-list__mininav-btn {
+    position: relative;
+}
+
+.project-list__mininav {
+    padding-bottom: 5px;
+    margin-top: -8px;
+    opacity: 0;
+}
+.project-list-container__item:hover .project-list__mininav {
+    opacity: 1;
+    transition: opacity 0.2s ease-in;
+}
+
+
+.dropdown-parent-btn {
+    position: relative
+}
+
+.mininav-dropdown {
+    z-index: 3;
+    position: absolute;
+    top: 33px;
+    left: 0px;
+    font-size: 0.85rem;
+    width: 150px;
+    height: 72px;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 0 0 1px rgba(100,111,121,.15), 0 5px 20px 0 rgba(21,27,38,.08);
+    box-sizing: border-box;
+    &__item {
+        color: $text-gray;
+    }
+    &__item-wrap {
+        width: 100%;
+        padding: 10px;
+        border-radius: 4px;
+    }
+    &__item-wrap:hover {
+        background-color: $hover-gray;
+    }
+}
+
+
+.create-all-dropdown {
+    z-index: 3;
+    position: absolute;
+    top: 34px;
+    right: 7px;
+    font-size: 0.85rem;
+    width: 150px;
+    // height: 100px;
+    padding: 10px 0;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 0 0 1px rgba(100,111,121,.15), 0 5px 20px 0 rgba(21,27,38,.08);
+    // -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    &__item {
+        margin-left: 20px;
+    }
+    &__item-wrap {
+        width: 100%;
+        padding: 8px 18px;
+        color: $text-gray;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+
+        i {
+            font-size: 1.2rem;
+            color: rgb(149, 157, 164);
+            font-weight: lighter;
+        }
+    }
+    &__item-wrap:hover {
+        color: white;
+        background-image: linear-gradient(to top right, #ff5263 0%, #ff7381 35%, #fcbd01 100%);
+        i {
+            color: white;
+        }
+    }
+}
+
+
+.current-user-dropdown {
+    z-index: 3;
+    position: absolute;
+    top: 34px;
+    right: -4px;
+    font-size: 0.85rem;
+    width: 100px;
+    height: 80px;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 0 0 1px rgba(100,111,121,.15), 0 5px 20px 0 rgba(21,27,38,.08);
+    // -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    &__item {
+        color: $text-gray;
+    }
+    &__item-wrap {
+        width: 100%;
+        padding: 10px;
+        border-radius: 4px;
+    }
+    &__item-wrap:hover {
+        background-color: $hover-gray;
+    }
+}
+
+.side {
+    top: 0px;
+    left: -160px;
+    z-index: 3;
+}
+
+
+.hidden {
+    display: none;
+}

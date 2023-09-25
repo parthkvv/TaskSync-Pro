@@ -1,0 +1,282 @@
+html {
+	position: relative;
+    height: 100%;
+    font-family: $main-font;
+    font-size: 16px;
+    width: 100vw;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+}
+select:after {
+    position: absolute;
+    top: 40px;
+}
+
+//============ session flows============//
+
+.home-style {
+    font-family: $home-font;
+}
+.page-container {
+    // currently signup flow pages are using it
+    height: 100vh;
+}
+
+//refactoring css with sass and BEM
+.form {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 30px 0;
+    align-items: center;
+    width: 100%;
+    
+    &__input {
+        background-color: #fff;
+        border: 2px solid #e0e6e8;
+        border-radius: 3px;
+        height: 50px;
+        line-height: normal;
+        margin: 0;
+        padding: 0;
+        padding-left: 16px;
+        width: 100%;
+    }
+
+    &__label {
+        color: $text-gray;//#646f79;
+        margin-bottom: 8px;
+    }
+
+    &__btn {
+        
+        color: white;
+        border-radius: 3px;
+        width: 100%;
+        text-align: center;
+        height: 50px;
+        font-weight: 500;
+        margin-bottom: 24px;
+
+        &--blue {
+            background-color: $core-teal;
+        }
+        &--purple {
+            background-color: $core-purple;
+        }
+        
+    }
+
+    &__msg--gray {
+        font-size: 0.8rem;
+        color: $text-gray;
+    }
+    &__msg--red {
+        font-size: 0.8rem;
+        color: $workspace-red; 
+    }
+        
+}
+
+.nav__btn {
+    padding: 4px 12px;
+    line-height: 30px;
+    font-weight: 500;
+    border-radius: 3px;
+}
+.nav__btn:hover {
+    cursor: pointer;
+}
+
+.btn {
+    padding: 8px 16px;
+    line-height: 30px;
+    font-weight: 400;
+    border-radius: 3px;
+
+    &--link {
+        color: $text-gray;
+    }
+    &--purple {
+        background-color: $core-purple;
+        color: white;
+    }  
+    &--blue {
+        background-color: $core-teal;
+        color: white;    
+    }  
+}
+
+
+//Todo: refactor to have .clickable class with hover pointer defined
+.btn:hover {
+    cursor: pointer;
+}
+
+
+.hyperlink {
+    
+    &--purple {
+        font-weight: bold;
+        color: $core-purple;
+    }
+
+    &--blue {
+        font-weight: 400;
+        color: $core-teal;
+    }
+}
+.hyperlink:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    
+}
+
+input::placeholder {
+    color: #c6ccce;
+}
+
+.input-group {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    margin-bottom: 24px;
+    width: 100%;
+}
+
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: transparent;
+
+    &__text {
+        display: block;
+        font-family: $logo-font;
+        background-color: transparent;
+
+    }
+
+    &__img {
+        width: 28px;
+        height: 28px;
+        background-color: transparent;
+    }
+}
+
+.logo-wrap-workspace {
+    padding-left: 12px;
+    padding-top: 12px;
+}
+.logo-wrap-workspace p {
+    color: white;
+    font-size: 24px;
+    padding: 0 3px;
+    font-weight: normal;
+}
+
+.logo-wrap-company-home p {
+    color: $dark-navy;
+    font-size: 30px;
+    padding: 0 3px;
+}
+
+
+.btn-buff-32 {
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.ctnr-buff--fullpage {
+    margin: 30px 5%;
+    padding: 30px 0; 
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.ctnr-buff--gridpage {
+    margin: 30px 5vw;
+    padding: 30px 0; 
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.form-buff--signup {
+    //come back after profile photo feature is built out to adjust the width
+    width: 354px;
+}
+
+//============workspace=================//
+
+.checkbox-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid $light-gray;
+    margin-left: 3px;
+    margin-right: 3px;
+    color: $light-gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.checkbox-circle:hover {
+    border-color: $workspace-green;
+}
+.checkbox-circle:hover .fa-check {
+    color: $workspace-green;
+}
+
+
+
+
+//checkbox transition
+// {transition: 200ms box-shadow,200ms color,200ms background,200ms fill,200ms border-color;
+// }
+
+//============ media queries=================//
+
+@media screen and (min-width: 375px) {
+
+
+    .ctnr-buff--fullpage {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+     
+
+}
+@media screen and (min-width: 768px) {
+    .ctnr-buff--gridpage {
+        margin: 30px 20vw;
+    }
+
+    .ctnr-buff--fullpage {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    
+
+}
+
+
+  
+@media screen and (min-width: 1120px) {
+    .ctnr-buff--gridpage {
+        // margin-left: 30%;
+        // margin-right: 30%;
+    }
+
+    .ctnr-buff--fullpage {
+        margin-left: 28%;
+        margin-right: 28%;
+    }
+
+}
+

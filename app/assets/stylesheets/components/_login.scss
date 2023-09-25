@@ -1,0 +1,65 @@
+.modal-comp-container { 
+    box-sizing: border-box;
+    background-color:#f6f8f9; 
+    border-radius: 3px;
+    box-shadow: 0 20px 30px 0 rgba(36,50,66,.14);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    position: relative;
+    width: 90%;
+    max-width: 900px;
+    padding-top: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+    min-height: 650px;
+    
+
+    &__header {
+        font-size: calc(33.75px + 11.25 * ((100vw - 480px) / 800));
+        line-height: 1.244;
+        display: block;
+        margin-bottom: 0;
+        text-align: center;
+        color: $dark-navy;
+        font-weight: 300;
+    }
+
+    &__close-btn {
+        color: #b7bfc6;
+        cursor: pointer;
+        font-size: 2rem;
+        margin: 0;
+        opacity: .6;
+        position: absolute;
+        right: 32px;
+        top: 32px;
+        transition: opacity .15s ease-in-out; 
+    }
+    
+    &__footer {
+        color: #9ca6af;
+        margin: 50px auto;
+    }
+}
+
+.demo-btn {
+    width: 100%;
+    text-align: center;
+    color: $core-purple;
+}
+
+//============ media queries=================//
+@media screen and (min-width: 768px) {
+    #login-container {
+        padding-left: 112px;
+        padding-right: 112px;
+    }
+
+}
+  
+@media screen and (min-width: 800px) {
+    
+
+}
+

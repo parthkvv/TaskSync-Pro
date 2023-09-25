@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Samasana</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <script type="text/javascript">
+      window.logoURL = "<%= image_url('samasana.svg') %>";
+      window.kanbanIconURL = "<%= image_url('kanban_icon.svg') %>";
+      window.womanPinkPointing = "<%= image_url('woman_pink_pointing.png') %>";
+      window.unfilledStarIconURL = "<%= image_url('star_icon_unfilled.svg') %>";
+      window.filledStarIconURL = "<%= image_url('star_icon_filled.svg') %>";
+      window.checkIconURL = "<%= image_url('check_icon.svg') %>";
+      window.homeIconURL = "<%= image_url('home_icon.svg') %>";
+      window.invitePeepsImgURL = "<%= image_url('invite_peeps.png') %>";
+      window.plusIconURL = "<%= image_url('plus_icon.svg') %>";
+      window.dragHandleIconURL = "<%= image_url('drag_handle_icon.svg') %>";
+      window.personIcon = "<%= image_url('person_icon.svg') %>";
+      window.paragraphIcon = "<%= image_url('paragraph_icon.svg') %>";
+      window.clipboardIcon = "<%= image_url('clipboard_icon.svg') %>";
+      window.calendarIcon = "<%= image_url('calendar_icon.svg') %>";
+      window.welcomePageImage = "<%= image_url('welcome_page_image.png') %>";
+
+    </script>
+
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,600|Josefin+Sans:300,400,600|Muli|Questrial&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,600|Quicksand|Questrial|Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+    <script src="https://kit.fontawesome.com/bb4484e347.js"></script>
+ 
+
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>

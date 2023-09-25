@@ -1,0 +1,47 @@
+.workspace-header {
+    background-color:  white;
+    box-sizing: border-box;
+    width: calc(100vw-244px);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right:20px;
+    height: 100%;
+
+    &__title-grouping {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    &__title {
+        font-size: 1.3rem;
+        font-weight: 500;
+
+    }
+
+    &__btn-section {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    &__btn {
+        border-radius: 3px;
+        font-size: 0.9rem;
+        font-weight: 400;
+        color: white;
+        height: 30px;
+        line-height: 31px;
+        min-width: 60px;
+        text-align: center;
+        background-image: linear-gradient(to top right, #ff5263 0%, #ff7381 35%, #fcbd01 100%);
+        margin-right:10px;
+    }
+}
+
+
+
